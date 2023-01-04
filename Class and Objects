@@ -29,7 +29,7 @@ class A:
                 print("Wrong input")
 
 obj1=A()
-choice=eval(input("Enter your choice from sum, sub, mul and div"))
+choice=(input("Enter your choice from sum, sub, mul and div"))
 if choice=="sum":
     obj1.sum()
 elif choice=="sub":
