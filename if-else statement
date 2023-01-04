@@ -1,0 +1,20 @@
+a=eval(input("Enter first number"))
+b=eval(input("Enter second number"))
+choice=eval(input("Enter your choice from sum, sub, mul and div"))
+if choice=="sum":
+    c=a+b
+    print(c)
+elif choice=="sub":
+    c=a-b
+    print(c)
+elif choice=="div":
+    try:
+        c=a//b
+        print(c)
+    except:
+        print("Something is wrong")
+elif choice=="mul":
+    c=a*b
+    print(c)
+else:
+    print("Wrong choice")
