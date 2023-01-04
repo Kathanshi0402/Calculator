@@ -1,0 +1,42 @@
+class A:
+    def __init__(self):
+        self.a=eval(input("Enter first number"))
+        self.b=eval(input("Enter second number"))
+
+    def sum(self):
+        self.c=self.a+self.b
+        print(self.c)
+
+    def sub(self):
+        self.c=self.a-self.b
+        print(self.c)
+
+    def mul(self):
+        self.c=self.a*self.b
+        print(self.c)
+
+    def div(self):
+        try:
+            self.c=self.a//self.b
+            print(self.c)
+        except:
+            print("Invalid value")
+            self.b=eval(input("Enter a number except 0"))
+            try:
+                self.c=self.a//self.b
+                print(self.c)
+            except:
+                print("Wrong input")
+
+obj1=A()
+choice=eval(input("Enter your choice from sum, sub, mul and div"))
+if choice=="sum":
+    obj1.sum()
+elif choice=="sub":
+    obj1.sub()
+elif choice=="mul":
+    obj1.mul()
+elif choice=="div":
+    obj1.div()
+else:
+    print("Wrong choice")
